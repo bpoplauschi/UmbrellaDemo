@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		979CC42227306913007DF8BC /* UmbrellaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979CC41927306913007DF8BC /* UmbrellaDemo.framework */; };
 		979CC42727306913007DF8BC /* UmbrellaDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CC42627306913007DF8BC /* UmbrellaDemoTests.swift */; };
-		979CC42827306913007DF8BC /* UmbrellaDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 979CC41C27306913007DF8BC /* UmbrellaDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		979CC43227306937007DF8BC /* UmbrellaDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CC43127306937007DF8BC /* UmbrellaDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +24,9 @@
 
 /* Begin PBXFileReference section */
 		979CC41927306913007DF8BC /* UmbrellaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UmbrellaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		979CC41C27306913007DF8BC /* UmbrellaDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UmbrellaDemo.h; sourceTree = "<group>"; };
 		979CC42127306913007DF8BC /* UmbrellaDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UmbrellaDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		979CC42627306913007DF8BC /* UmbrellaDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmbrellaDemoTests.swift; sourceTree = "<group>"; };
+		979CC43127306937007DF8BC /* UmbrellaDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmbrellaDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 		979CC41B27306913007DF8BC /* UmbrellaDemo */ = {
 			isa = PBXGroup;
 			children = (
-				979CC41C27306913007DF8BC /* UmbrellaDemo.h */,
+				979CC43127306937007DF8BC /* UmbrellaDemo.swift */,
 			);
 			path = UmbrellaDemo;
 			sourceTree = "<group>";
@@ -89,7 +89,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				979CC42827306913007DF8BC /* UmbrellaDemo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +143,7 @@
 				TargetAttributes = {
 					979CC41827306913007DF8BC = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					979CC42027306913007DF8BC = {
 						CreatedOnToolsVersion = 13.1;
@@ -191,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979CC43227306937007DF8BC /* UmbrellaDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +338,7 @@
 		979CC42C27306913007DF8BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -358,6 +360,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -365,6 +368,7 @@
 		979CC42D27306913007DF8BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -393,6 +397,7 @@
 		979CC42F27306913007DF8BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -414,6 +419,7 @@
 		979CC43027306913007DF8BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
